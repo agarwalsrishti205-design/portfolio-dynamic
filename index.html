@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srishti Agarwal | Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- Background abstract shapes -->
+    <div class="bg-shape1"></div>
+    <div class="bg-shape2"></div>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Srishti Agarwal</h1>
+            <p class="tagline">
+                Fueled by curiosity and caffeine — a third-year BCA student exploring the world of computer applications.
+            </p>
+        </div>
+
+        <div class="hero-img">
+            <img src="{{ url_for('static', filename='assets/profile.jpg') }}">
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            I am a third-year BCA student deeply immersed in the world of computer applications. 
+            Driven by curiosity, creativity, and a love for learning, I aim to bridge the gap between 
+            academic concepts and real-world application. I am actively seeking an internship where 
+            I can apply my technical skills, gain industry exposure, and contribute meaningfully to 
+            impactful projects.
+        </p>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="skills">
+        <h2>Skills</h2>
+
+        <div class="skill-grid">
+            <div class="skill-card">HTML, CSS & JavaScript</div>
+            <div class="skill-card">Excel (Data Analysis)</div>
+            <div class="skill-card">PowerPoint (Professional Decks)</div>
+            <div class="skill-card">SEO & Digital Marketing</div>
+            <div class="skill-card">Figma & Canva</div>
+            <div class="skill-card">Communication (English & Hindi)</div>
+            <div class="skill-card">Problem Solving</div>
+            <div class="skill-card">Team Collaboration</div>
+        </div>
+    </section>
+
+    <!-- HOBBIES -->
+    <section class="hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Baking</li>
+            <li>Dancing</li>
+            <li>Trekking</li>
+        </ul>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Product Management — IBM (2025)</li>
+            <li>Data Security Course — Cisco (2025)</li>
+            <li>UI/UX Design — Complete Web & Mobile Designer (2024)</li>
+        </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact">
+    <h2>Contact Me</h2>
+
+    <form action="/submit" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        
+        <input type="email" name="email" placeholder="Your Email" required>
+        
+        <textarea name="message" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+</body>
+</html>
